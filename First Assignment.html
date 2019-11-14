@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Self </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+   
+	<style type="text/css">
+		/* Define custom fonts */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('fonts/ballpark.eot');
+    src: url('fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ballpark.woff') format('woff'),
+         url('fonts/ballpark.ttf') format('truetype'),
+         url('fonts/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('fonts/dayrom.eot');
+    src: url('fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dayrom.woff') format('woff'),
+         url('fonts/dayrom.ttf') format('truetype'),
+         url('fonts/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Main elements of the page */
+
+body {
+    background:url('wallpic.jpg');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: darkred;
+    
+}
+
+#main_wrapper
+{
+    width: 900px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header
+{
+    background: url('line.png') repeat-x bottom;
+}
+
+#main_title
+{
+    display: inline-block;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#logo, header h1
+{
+    display: inline-block;
+    margin-bottom: 0px;
+    border-radius: 10px;
+
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Navigation */
+
+nav
+{
+    display: inline-block;
+    width: 740px;
+    text-align: right;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: darkred;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: crimson;
+    border-bottom: 3px solid crimson;
+}
+
+/* Banner */
+
+#banner_image
+{
+    margin-top: 15px;
+    height: 220px;
+    border-radius: 5px;
+    background: url('ban3.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#banner_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 25px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgb(24,24,24); /* Old browsers will read this */
+    background-color: rgba(24,24,24,0.8); /* New browsers will read this */
+    color: white;
+    font-size: 0.8em;
+    
+}
+
+.red_button
+{
+    display: inline-block;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url('red_background.png') repeat-x;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+.red_button:hover{
+    border:2px solid #1a1a1a;
+}
+.red_button img
+{
+    border: 0;
+}
+
+/* Body */
+
+article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    border-radius: 5px;
+}
+
+article
+{
+    width: 600px;
+    padding: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 3px #ffc2c2;
+}
+
+.cat_icon
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
+    margin: 5px;
+}
+
+aside
+{
+    position: relative;
+    margin-top: 30px;
+    width: 235px;
+    background-color:  #eea891;
+    box-shadow: 0px 4px 4px #ffc2c2;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 0.9em;
+}
+
+#arrow
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+    box-shadow: #ffc2c2;
+}
+
+#my_picture
+{
+    text-align: center;
+}
+
+#my_picture img
+{
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+#my_picture img:hover{
+    border: 2px solid #1a1a1a;
+}
+
+aside img
+{
+    margin-right: 5px;
+    border-radius: 10px;
+   
+}
+aside img:hover{
+    border: 1px solid #ffc2c2;
+
+}
+/* Footer */
+
+footer
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+    padding-top: 25px;
+    box-shadow: 1px 1px 4px 3px #ffc2c2 ;
+    border-radius: 5px;
+    padding: 10px;
+}
+footer p, footer ul
+{
+    font-size: 0.8em;
+
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+#tweet, #my_pictures, #my_friends
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#tweet
+{
+    width: 28%;
+}
+#tweet img {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#tweet img:hover{
+	border: 2px solid #1a1a1a;
+}
+#my_pictures
+{
+    width: 35%;
+}
+
+#my_friends
+{
+    width: 31%;
+    margin-left: 40px;
+}
+
+#my_pictures img
+{
+    border: 1px solid black;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+#my_pictures img:hover{
+    border: 2px solid black;
+}
+
+
+#my_friends ul
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    margin-left: 25px;
+    width: 48%;
+    list-style-image: url('external_link.png');
+    padding-left: 5px;
+}
+
+#my_friends a
+{
+    text-decoration: none;
+    color: #760001;
+}
+
+
+	</style>
+</head>
+<body>
+	<div id="main_wrapper">
+            <header>
+                <div id="main_title">
+                    <img src="logo1.jpg" alt="logo" id="logo" />
+                    <h1>Kashaf Naz</h1>
+                    <h2>"And I Think To My Self</h2>
+                    <h2>What a Wonderful World"</h2>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="banner_image">
+                <div id="banner_description">
+                    The Best View Comes After the Hardest Climb..
+                    <a href="#" class="red_button">See Article <img src="small_arrow.png" alt="" /></a>
+                </div>
+            </div>
+            <section>
+                <article>
+                    <h1><img src="pic5.jpg" alt="Travel category" class="cat_icon" />I'm a Great Climber</h1>
+                    <h1 title="Hobby">"Climbing is My Hobby"</h1>
+                    <p>Climbing is the activity of using one's hands, feet, or any other part of the body to ascend a steep topographical object.</p>
+                    <p>Rock Climbing is one of most popular and healthy sports in world. There are several types of climbing mainly classified in top roping and lead climbing. Rock climbing is a challenging sport that involves tons of motivation, dedication, and perseverance. With all of these aspects, rock climbing is within reach of most people, and although it looks tough at times, it is a great hobby to get into. Due to the length of time and extended endurance required, and because accidents are most likely to happen on the descent, rock climbers do not usually climb back down the route.</p>
+                    <p>Exercise, in general, has been shown to reduce stress. But rock climbing (like other extreme sports) has the added advantage of a state called flow. Climbers routinely talk about losing themselves in the flow of the climb and get themselves into a mindset that creates a sense of euphoria and even blocks pain. The core stabilizes the body, and leads to a stronger, less injury prone body. Climbing strengthens your hands and forearms, biceps, shoulders, neck, traps, upper back, lats, lower back, abs, glutes, thighs and calves. Your entire body, including cardiovascular systems, benefits from rock climbing.</p>
+                    <p>Rock climbing is a physically and mentally demanding sport, one that often tests a climber's strength, endurance, agility and balance along with mental control. It can be a dangerous activity and knowledge of proper climbing techniques and use of specialized climbing equipment is crucial for the safe completion of routes. A basic climbing diet should consistent of plenty of fresh vegetables, lean proteins, whole grains, healthy fats, and unprocessed foods, plus a limited amount of refined sugar and unhealthy fats. The most important part of a solid climbing diet is to be knowledgeable about what you're putting into your body.</p>                    
+                    <p>Do nothing in haste; look well to each step; and from the beginning think what may be the end. Every mountain top is within reach if you just keep climbing. With climbing you can go to the most beautiful places on the planet and practice. Anywhere there is rock, you can climb.</p>
+                   
+                   </article>
+                <aside>
+                    <h1>About the author</h1>
+                    <img src="oo.png" alt="" id="arrow" />
+                    <p id="my_picture"><img src="pic20.jpg" alt="myPicture" /></p>
+                    <p>Let me introduce myself: My name's Kashaf. I was born on 17 December 1998.</p>
+                    <p>"I climb the mountain and feel one with the rock and grift and solitude echoing back at me."</p>
+                    <p><img  src="facebook.png" alt="facebook"/ title="facebook"><img src="twitter.png" alt="Twitter" / title="Twitter"><img src="Insta.jpg" alt="Insta" / title="Instagram"><img src="whatsApp.png" alt="WhatsApp" / title="whatsApp"></p>
+                </aside>
+            </section>
+            
+            <footer>
+                <div id="tweet">
+                    <h1>My Tweet</h1>
+                    <p title="follow me"><img src="follow.jpg"></p>
+                    <p>14/11/19 12:00</p>
+                </div>
+                <div id="my_pictures">
+                    <h1>My pictures</h1>
+                    <p title="images"><img src="cilm.jpg" alt="Picture" /><img src="images.jpg" alt="Picture" /><img src="pic4.jpg" alt="Picture" /><img src="pici.jpg" alt="Picture" /></p>
+                </div>
+                <div id="my_friends">
+                    <h1>My friends</h1>
+                    <ul>
+                        <li><a href="#">Atiqa</a></li>
+                        <li><a href="#">Nida</a></li>
+                        <li><a href="#">Hareem </a></li>
+                        <li><a href="#">Samreen</a></li>
+                    </ul>
+                </div>
+                <p id="copyright">Copyright<span>&#169</span>2019. By Kashaf Naz Roll No.26</p>
+            </footer>
+</body>
+</html>
