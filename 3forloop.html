@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For Loop</title>
+</head>
+<body style="background-color: lightgray;">
+	<h1 style="text-align: center;">Fruits Name</h1>
+	<p id="demo", style="text-align: center;"></p>
+
+<script type="text/javascript">
+ var fruits = ["Apple", "Banana", "Orange", "Peach", "Mango", "Strawberry", "Cherry", "Guava", "Pear"];
+ var text = "";
+ var i;
+ for (i=0; i < fruits.length; i++) {
+ 	text += fruits[i] + "<br />";
+ }
+
+ document.getElementById('demo').innerHTML = text;
+</script>
+</body>
+</html>
